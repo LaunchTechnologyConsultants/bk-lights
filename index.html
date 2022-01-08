@@ -32,7 +32,6 @@
   <!-- Template Main CSS File -->
   <link href="./assets/css/style.css" rel="stylesheet">
 
-
   <!-- =======================================================
   * Template Name: MyPortfolio - v4.7.0
   * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
@@ -43,47 +42,86 @@
 
 <body>
 
-  <nav class="navbar navbar-light custom-navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Delaware Lighting and Design</a>
-      <div class="col-sm-6 social text-md-end">
-        <a href="#"><span class="bi bi-twitter"></span></a>
-        <a href="#"><span class="bi bi-facebook"></span></a>
-        <a href="#"><span class="bi bi-instagram"></span></a>
-        <a href="#"><span class="bi bi-linkedin"></span></a>
-      </div>
+        <a class="navbar-brand" href="/">Delaware Lighting and Design</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+          </div>
     </div>
   </nav>
 
+  <div class="banner-image img-fluid">
+    <div class="banner-text w-50">
+      <p class="mx-auto">
+        We offer a number of service to help light up your home or business. Each job is unique and we'll work
+          with you to bring your vision to life. Call today to get a quote!
+      </p>
+      <div class="row">
+        <div class="row">
+          <div class="col-lg-2 col-xs-0"></div>
+          <div class="col-lg-4 col-xs-6 my-2 form-group">
+            <!-- TODO -->
+            <a href="tel:3025316656">
+              <input type="submit" class="w-100 contact-button" value="Call Us">
+            </a>
+          </div>
+          <div class="col-lg-4 col-xs-6 my-2 form-group">
+            <a href="#">
+              <input type="submit" class="w-100 contact-button" value="Contact Us">
+            </a>
+          </div>
+          <div class="col-lg-2 col-xs-0"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <main id="main">
 
+    <div class="banner-text-mobile m-5 text-center">
+      <p class="mx-auto">
+        We offer a number of service to help light up your home or business. Each job is unique and we'll work
+          with you to bring your vision to life. Call today to get a quote!
+      </p>
+      <div class="row">
+        <div class="col-lg-3 col-xs-0"></div>
+        <div class="col-lg-3 col-xs-6 my-2 form-group">
+          <!-- TODO -->
+          <a href="tel:3025316656">
+            <input type="submit" class="w-100 contact-button" value="Call Us">
+          </a>
+        </div>
+        <div class="col-lg-3 col-xs-6 my-2 form-group">
+          <a href="#">
+            <input type="submit" class="w-100 contact-button" value="Contact Us">
+          </a>
+        </div>
+        <div class="col-lg-3 col-xs-0"></div>
+      </div>
+    </div>
+
+    <!-- <img src="./assets/img/banner.jfif" alt="" class="w-100 img-fluid"> -->
 
     <!-- ======= Services Section ======= -->
     <section class="section services">
       <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center text-center mb-4">
-          <div class="col-8">
-            <h3 class="h3 heading">Our Services</h3>
-            <p>We offer a number of service to help light up your home or business. Each job is unique and we'll work
-              with you to bring your vision to life. Call today to get a quote!</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4"></div>
-          <div class="col-md-2 mt-0 form-group">
-            <!-- TODO -->
-            <a href="tel:3023311183">
-              <input type="submit" class="readmore d-block w-100" value="Call Us">
-            </a>
-          </div>
-          <div class="col-md-2 mt-0 form-group">
-            <a href="mailto:salesbkrentalsde@gmail.com">
-              <input type="submit" class="readmore d-block w-100" value="Email Us">
-            </a>
-          </div>
-          <div class="col-md-4"></div>
-        </div>
-        <div class="row mt-5">
+
+        <div class="row categories">
 
           <div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <i class="bi bi-tree"></i>
@@ -93,29 +131,22 @@
               src="https://secureservercdn.net/198.71.233.216/ix5.415.myftpupload.com/wp-content/uploads/2020/08/IMG_0838-1024x768.jpg">
           </div>
           <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-            <i class="bi bi-server"></i>
-            <h4 class="h4 mb-2">Bollards</h4>
+            <i class="bi bi-bricks"></i>
+            <h4 class="h4 mb-2">Deck</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit explicabo inventore.</p>
             <img class="w-100 h-50"
               src="https://secureservercdn.net/198.71.233.216/ix5.415.myftpupload.com/wp-content/uploads/2020/08/IMG_0929-1024x768.jpg">
-            <!-- <ul class="list-unstyled list-line">
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
-              <li>Non pariatur nisi</li>
-              <li>Magnam soluta quod</li>
-              <li>Lorem ipsum dolor</li>
-              <li>Cumque quae aliquam</li>
-            </ul> -->
           </div>
           <div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <i class="bi bi-snow"></i>
-            <h4 class="h4 mb-2">Holiday</h4>
+            <h4 class="h4 mb-2">Permanent Holiday</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit explicabo inventore.</p>
             <img class="w-100 h-50"
               src="https://secureservercdn.net/198.71.233.216/ix5.415.myftpupload.com/wp-content/uploads/2020/02/IMG_0098-1024x640.jpg">
           </div>
           <div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <i class="bi bi-brush"></i>
-            <h4 class="h4 mb-2">Full Color</h4>
+            <h4 class="h4 mb-2">Full Color / RGB</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit explicabo inventore.</p>
             <img class="w-100  h-50"
               src="https://secureservercdn.net/198.71.233.216/ix5.415.myftpupload.com/wp-content/uploads/2020/08/IMG_1473-1024x640.jpg">
@@ -123,7 +154,7 @@
         </div>
         <a href="./gallery.html" class="row mt-5">
           <div class="col-11">
-            <p class="float-end my-3">Veiw Gallery</p>
+            <p class="float-end my-3">View Gallery</p>
           </div>
           <i class="col-1 bi bi-arrow-right-short"></i>
         </a>
@@ -131,7 +162,7 @@
     </section><!-- End Services Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section class="section pt-0">
+    <section class="section">
       <div class="container">
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -171,7 +202,8 @@
       </div>
     </section><!-- End Testimonials Section -->
 
-  </main><!-- End #main -->
+  </main>
+  <!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer class="footer" role="contentinfo">
@@ -188,6 +220,12 @@
           -->
             Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
           </div>
+        </div>
+        <div class="col-sm-6 social text-center text-sm-end">
+          <a href="#"><span class="bi bi-facebook"></span></a>
+          <a href="#"><span class="bi bi-instagram"></span></a>
+          <a href="tel:3025316656"><span class="bi bi-telephone-fill"></span></a>
+          <a href="mailto:bkrentalsde@gmail.com"><span class="bi bi-envelope-fill"></span></a>
         </div>
       </div>
     </div>
@@ -207,9 +245,10 @@
   <script src="assets/js/main.js"></script>
 
   <!--- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 </body>
 
