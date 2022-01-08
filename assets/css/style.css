@@ -8,8 +8,13 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+:root {
+  --theme-color: rgb(34, 71, 73);
+}
+
 body {
-  font-family: "Inconsolata", monospace;
+  /* font-family: "Inconsolata", monospace; */
   color: #0d1e2d;
 }
 
@@ -27,7 +32,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .section {
-  padding: 7rem 0;
+  padding: 2rem 0;
 }
 
 .filters a {
@@ -238,8 +243,8 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .services i {
   font-size: 40px;
 }
-.services h4 {
-  padding-top: 10px;
+.services .categories {
+  padding-top: 7.5%;
 }
 
 /* Contact Form */
@@ -340,8 +345,10 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 /* Custom Navbar */
 .custom-navbar {
-  padding-top: 50px;
+  padding-top: 30px;
   width: 100%;
+  background-color: var(--theme-color);
+  color: white;
 }
 @media (max-width: 780px) {
   .custom-navbar > .container {
@@ -350,8 +357,13 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   }
 }
 .custom-navbar .navbar-brand {
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
+
+.navbar-brand {
+  color: white;
+}
+
 
 /* Burger */
 .burger {
@@ -448,4 +460,70 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 .social a:hover {
   color: #000;
+}
+
+.banner-image {
+  background-image: url("../img/banner.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-text{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: large;
+  padding: 1%;
+}
+
+@media (max-width: 480px) {
+  .banner-text{
+    display: none;
+  }
+}
+
+.banner-text-mobile{
+  display: none;
+  height: 0%;
+  margin: 0px;
+}
+
+@media (max-width: 480px) {
+  .banner-text-mobile{
+    /* visibility: visible; */
+    /* margin: 0%; */
+    display: block;
+   }
+}
+
+
+body, html {
+  height: 100%;
+}
+
+.contact-button{
+  background: var(--theme-color);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.contact-button:hover{
+  background: #0d1e2d;
+  color: white;
+}
+
+.nav-link{
+  color: white !important;
 }
